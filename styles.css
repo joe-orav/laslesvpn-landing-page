@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+:root {
+  --site-font: "Rubik", sans-serif;
+}
+
+body {
+  font-family: var(--site-font);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.2rem;
+}
+
+.nav-item-list {
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  color: #4f5665;
+  text-decoration: none;
+  margin: 0 1.1rem;
+  font-size: 1rem;
+}
+
+button {
+  font-family: var(--site-font);
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.sign-in-btn {
+  font-weight: 500;
+}
+
+.sign-up-btn {
+    color: #F53855;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.sign-in-btn, .sign-up-btn {
+    margin: 0 0.8rem;
+}
