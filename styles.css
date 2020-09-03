@@ -1,17 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
+/************ Global Styles ************/
+
 :root {
   --site-font: "Rubik", sans-serif;
+  --text-color: #4f5665;
 }
 
 body {
   font-family: var(--site-font);
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 80%;
 }
+
+button {
+  font-family: var(--site-font);
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/************ Header & Navigation ************/
 
 header {
   display: flex;
@@ -29,16 +47,9 @@ header {
 }
 
 .nav-link {
-  color: #4f5665;
+  color: var(--text-color);
   text-decoration: none;
   margin: 0 1.1rem;
-  font-size: 1rem;
-}
-
-button {
-  font-family: var(--site-font);
-  background: none;
-  border: none;
   font-size: 1rem;
 }
 
@@ -47,13 +58,83 @@ button {
 }
 
 .sign-up-btn {
-    color: #F53855;
-    border: 1px solid #F53855;
-    border-radius: 50px;
-    padding: 10px 20px;
-    font-weight: 500;
+  color: #f53855;
+  border: 1px solid #f53855;
+  border-radius: 50px;
+  padding: 10px 40px;
+  font-weight: 500;
 }
 
-.sign-in-btn, .sign-up-btn {
-    margin: 0 0.8rem;
+.sign-in-btn,
+.sign-up-btn {
+  margin: 0 0.8rem;
+}
+
+/************ Call-to-Action ************/
+
+.cta {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.cta-info {
+  margin-right: 5px;
+}
+
+.cta-text-header {
+  font-size: 3.1rem;
+  font-weight: 500;
+  color: #0b132a;
+  line-height: 70px;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.cta-text-header span {
+  font-weight: bold;
+}
+
+.cta-text-desc {
+  color: var(--text-color);
+  line-height: 30px;
+  margin: 0;
+}
+
+.cta-text-desc span {
+  font-weight: 500;
+}
+
+.cta-img-ctr {
+  min-width: 550px;
+}
+
+.cta-btn-ctr {
+    position: relative;
+}
+
+.cta-btn {
+  color: #fff;
+  font-weight: bold;
+  background: #f53838;
+  padding: 17.5px 77.5px;
+  border-radius: 10px;
+  margin-top: 2.5rem;
+  font-style: normal;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+  font-size: 1rem;
+}
+
+.cta-btn-shadow {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: calc(2.5rem + 30px);
+  background: rgba(245, 56, 56, 0.35);
+  filter: blur(24px);
+  border-radius: 10px;
+  width: 211px;
+  height: 60px;
 }
