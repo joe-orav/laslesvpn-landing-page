@@ -4,6 +4,7 @@
 
 :root {
   --site-font: "Rubik", sans-serif;
+  --primary-color: #F53838;
   --text-color-light: #4f5665;
   --text-color-dark: #0b132a;
 }
@@ -28,6 +29,14 @@ button {
   border: none;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.sec-2 {
+  background: linear-gradient(
+    180deg,
+    #f8f8f8 -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
 }
 
 /************ Header & Navigation ************/
@@ -59,8 +68,8 @@ header {
 }
 
 .sign-up-btn {
-  color: #f53855;
-  border: 1px solid #f53855;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 50px;
   padding: 10px 40px;
   font-weight: 500;
@@ -117,7 +126,7 @@ header {
 .cta-btn {
   color: #fff;
   font-weight: bold;
-  background: #f53838;
+  background: var(--primary-color);
   padding: 17.5px 77.5px;
   border-radius: 10px;
   margin-top: 2.5rem;
@@ -192,6 +201,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  margin-bottom: 130px;
 }
 
 .features-img-ctr {
@@ -235,4 +245,105 @@ header {
   height: 24px;
   display: block;
   margin-right: 10px;
+}
+
+/************ Plans ************/
+
+.plans {
+  padding-top: 80px;
+}
+
+.plans-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.plans-text {
+  margin-bottom: 60px;
+}
+
+.plans-header {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-color-dark);
+}
+
+.plans-desc {
+  color: var(--text-color-light);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.plan {
+  border: 2px solid #DDDDDD;
+  background: #fff;
+  width: 330px;
+  padding: 80px 0 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.plan-img-ctr {
+  width: 145px;
+  margin: 0 auto;
+}
+
+.plan-type {
+  color: var(--text-color-dark);
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.plan-features {
+  padding-left: 0;
+  margin: 30px auto 0;
+}
+
+.plan-feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--text-color-light);
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+.plan-feature-item span {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.plan-select {
+  margin-top: auto;
+}
+
+.plan-price {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-color-dark);
+}
+
+.plan-price span {
+  color: var(--text-color-light);
+  font-weight: normal;
+}
+
+.plan-select-btn {
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 13px 60px;
+  display: block;
+  margin: 20px auto 0;
 }
