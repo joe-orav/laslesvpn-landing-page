@@ -39,6 +39,23 @@ button {
   );
 }
 
+.sub-heading {
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: var(--text-color-dark);
+  line-height: 50px;
+}
+
+.sub-desc {
+  font-size: 1.1rem;
+  color: var(--text-color-light);
+  line-height: 30px;
+}
+
+.sub-desc span {
+  font-weight: 500;
+}
+
 /************ Header & Navigation ************/
 
 header {
@@ -89,7 +106,7 @@ header {
 }
 
 .cta-info {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .cta-text-header {
@@ -106,13 +123,7 @@ header {
 }
 
 .cta-text-desc {
-  color: var(--text-color);
-  line-height: 30px;
   margin: 0;
-}
-
-.cta-text-desc span {
-  font-weight: 500;
 }
 
 .cta-img-ctr {
@@ -209,16 +220,10 @@ header {
 }
 
 .feature-header {
-  font-weight: 500;
-  font-size: 2.1rem;
-  line-height: 50px;
-  color: var(--text-color-dark);
   margin-bottom: 20px;
 }
 
 .feature-desc {
-  color: var(--text-color-light);
-  line-height: 30px;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -263,15 +268,10 @@ header {
 }
 
 .plans-header {
-  font-size: 2.2rem;
-  font-weight: 500;
   text-align: center;
-  color: var(--text-color-dark);
 }
 
 .plans-desc {
-  color: var(--text-color-light);
-  font-size: 1rem;
   text-align: center;
 }
 
@@ -346,4 +346,37 @@ header {
   padding: 13px 60px;
   display: block;
   margin: 20px auto 0;
+}
+
+/************ Locations ************/
+
+.locations {
+  margin-top: 150px;
+}
+
+.locations-header {
+  max-width: 380px;
+  margin: 0 auto 30px;
+}
+
+.locations-desc {
+  max-width: 555px;
+  margin: auto;
+}
+
+.locations-header, .locations-desc {
+  text-align: center;
+}
+
+.location-points-ctr {
+  margin-top: 150px;
+}
+
+/************ Brands ************/
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
 }
