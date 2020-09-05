@@ -56,6 +56,12 @@ button {
   font-weight: 500;
 }
 
+.section-text {
+  max-width: 555px;
+  margin: auto;
+  text-align: center;
+}
+
 /************ Header & Navigation ************/
 
 header {
@@ -267,14 +273,6 @@ header {
   margin-bottom: 60px;
 }
 
-.plans-header {
-  text-align: center;
-}
-
-.plans-desc {
-  text-align: center;
-}
-
 .plan {
   border: 2px solid #DDDDDD;
   background: #fff;
@@ -359,15 +357,6 @@ header {
   margin: 0 auto 30px;
 }
 
-.locations-desc {
-  max-width: 555px;
-  margin: auto;
-}
-
-.locations-header, .locations-desc {
-  text-align: center;
-}
-
 .location-points-ctr {
   margin-top: 150px;
 }
@@ -379,4 +368,118 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 35px;
+}
+
+/************ Testimonials ************/
+
+.testimonial-text {
+  margin-top: 50px;
+}
+
+.testimonial-items {
+  display: flex;
+  overflow-y: hidden;
+  margin-top: 60px;
+}
+
+.testimonial-item {
+  min-width: 340px;
+  margin-right: 50px;
+  border-radius: 10px;
+  border: 2px solid #DDDDDD;
+  padding: 30px;
+}
+
+.person-icon-ctr {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.person-info-rating {
+  display: flex;
+  align-items: center;
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+}
+
+.person-name {
+  margin: 0;
+  color: var(--text-color-dark);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.person-location {
+  margin: 0;
+  color: var(--text-color-light);
+  font-size: 0.9rem;
+}
+
+.person-rating {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.person-rating p {
+  color: var(--text-color-dark);
+}
+
+.rating-icon-ctr {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.person-testimonial {
+  margin-top: 20px;
+}
+
+.person-testimonial p {
+  color: var(--text-color-dark);
+  margin: 0;
+  line-height: 30px;
+}
+
+.slider-controls {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-link {
+  width: 15px;
+  height: 15px;
+  background: #DDE0E4;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.slider-btn {
+  border: 2px solid var(--primary-color);
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 0;
+  padding: 15px;
+}
+
+.slider-btn img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.slider-btn.left {
+  margin-right: 20px;
+}
+
+.slider-btn.right {
+  background: var(--primary-color);
 }
