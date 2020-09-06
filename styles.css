@@ -11,6 +11,7 @@
 
 body {
   font-family: var(--site-font);
+  margin: 0;
 }
 
 img {
@@ -37,6 +38,11 @@ button {
     #f8f8f8 -45.04%,
     rgba(248, 248, 248, 0) 88.56%
   );
+}
+
+.sec-3 {
+  background: #F8F8F8;
+  margin-top: -125px;
 }
 
 .sub-heading {
@@ -482,4 +488,43 @@ header {
 
 .slider-btn.right {
   background: var(--primary-color);
+}
+
+/************ Subscribe ************/
+
+.subscribe {
+  position: relative;
+  margin-top: 65px;
+}
+
+.subscribe-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+  padding: 50px 70px;
+  box-shadow: 0px 10px 114px rgba(11, 19, 42, 0.06);
+}
+
+.subscribe-text {
+  width: 400px;
+}
+
+.subscribe-header {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.subscribe-desc {
+  margin: 0;
+}
+
+.subscribe-btn {
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  padding: 18px 65px;
+  border-radius: 10px;
+  box-shadow: 0px 40px 54px -10px rgba(245, 56, 56, 0.35);
 }
