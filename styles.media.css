@@ -1,0 +1,58 @@
+@media (max-width: 1024px) {
+  /************ Call-to-Action ************/
+
+  .cta-img-ctr {
+    min-width: 410px;
+  }
+
+  .cta-info {
+    margin-right: 25px;
+  }
+
+  .cta-text-header {
+    font-size: 2.3rem;
+    line-height: 50px;
+  }
+
+  .cta-btn {
+    padding: 17.5px 60px;
+    font-size: 0.9rem;
+  }
+
+  /************ Stats ************/
+
+  .stats {
+      padding: 20px 0;
+  }
+
+  .stats-text .text-num {
+      font-size: 1.2rem;
+  }
+
+  .stats-text .text-label {
+      font-size: 1rem;
+  }
+
+  /************ Features ************/
+
+  .features-img-ctr {
+    min-width: 400px;
+    width: 400px;
+  }
+
+  .features {
+      align-items: center;
+  }
+
+  /************ Plans ************/
+
+  .plan {
+      margin: 0 15px;
+  }
+
+  /************ Locations ************/
+
+  .location-points-ctr {
+      padding: 0 20px;
+  }
+}

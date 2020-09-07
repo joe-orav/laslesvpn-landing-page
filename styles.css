@@ -21,7 +21,8 @@ img {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 1152px;
+  width: 90%;
 }
 
 button {
@@ -374,8 +375,9 @@ header {
 
 .testimonial-items {
   display: flex;
-  overflow-y: hidden;
+  overflow-x: scroll;
   margin-top: 60px;
+  padding-bottom: 20px;
 }
 
 .testimonial-item {
