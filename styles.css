@@ -43,6 +43,7 @@ button {
 .sec-3 {
   background: #F8F8F8;
   margin-top: -125px;
+  padding-bottom: 100px;
 }
 
 .sub-heading {
@@ -158,18 +159,7 @@ header {
   position: relative;
   z-index: 2;
   font-size: 1rem;
-}
-
-.cta-btn-shadow {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: calc(2.5rem + 30px);
-  background: rgba(245, 56, 56, 0.35);
-  filter: blur(24px);
-  border-radius: 10px;
-  width: 211px;
-  height: 60px;
+  box-shadow: 0px 30px 54px -5px rgba(245, 56, 56, 0.35);
 }
 
 /************ Stats ************/
@@ -527,4 +517,80 @@ header {
   padding: 18px 65px;
   border-radius: 10px;
   box-shadow: 0px 40px 54px -10px rgba(245, 56, 56, 0.35);
+}
+
+/************ Footer ************/
+
+footer {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo-ctr {
+  width: 148px;
+}
+
+.company-desc-text {
+  width: 340px;
+  margin-top: 20px;
+}
+
+.company-desc {
+  margin: 0;
+}
+
+.social-media-links {
+  display: flex;
+  margin-top: 30px;
+}
+
+.social-media-icon-ctr {
+  margin-right: 20px;
+  position: relative;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+}
+
+.social-media-icon {
+  display: block;
+  position: relative;
+}
+
+.social-media-icon-ctr::before {
+  content: "";
+  position: absolute;
+  background: var(--primary-color);
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 7px;
+}
+
+.copyright {
+  color: #AFB5C0;
+  margin-top: 30px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+}
+
+.link-col-label {
+  color: var(--text-color-dark);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  color: var(--text-color-light);
+  text-decoration: none;
+  line-height: 30px;
+  display: block;
+  margin-bottom: 10px;
 }
