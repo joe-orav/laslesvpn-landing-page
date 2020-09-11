@@ -1,4 +1,12 @@
+/************ Laptop (1024px) ************/
+
 @media (max-width: 1024px) {
+  /************ Header & Navigation ************/
+
+  header {
+    padding: 30px 0;
+  }
+
   /************ Call-to-Action ************/
 
   .cta-img-ctr {
@@ -22,15 +30,15 @@
   /************ Stats ************/
 
   .stats {
-      padding: 20px 0;
+    padding: 20px 0;
   }
 
   .stats-text .text-num {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .stats-text .text-label {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   /************ Features ************/
@@ -41,18 +49,188 @@
   }
 
   .features {
-      align-items: center;
+    align-items: center;
   }
 
   /************ Plans ************/
 
   .plan {
-      margin: 0 15px;
+    margin: 0 15px;
   }
 
   /************ Locations ************/
 
   .location-points-ctr {
-      padding: 0 20px;
+    padding: 0 20px;
+  }
+}
+
+/************ Tablet (768px) ************/
+
+@media (max-width: 768px) {
+  /************ Global Styles ************/
+
+  .body-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+  }
+
+  .sec-4 {
+    margin-top: -165px;
+  }
+
+  /************ Header & Navigation ************/
+
+  nav {
+    position: fixed;
+    height: 100vh;
+    background: #fff;
+    top: 101px;
+    width: 250px;
+    left: 0;
+    display: none;
+  }
+
+  .menu-title {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-color-dark);
+    font-weight: 500;
+    background: #eeeff2;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .nav-item-list {
+    margin: 0;
+  }
+
+  .nav-item {
+    display: block;
+    border-bottom: 1px solid #eeeff2;
+    padding: 20px;
+  }
+
+  .logo-ctr {
+    margin-right: auto;
+    margin-left: 30px;
+  }
+
+  .nav-toggler-ctr {
+    display: block;
+    width: 30px;
+  }
+
+  /************ Call-to-Action ************/
+
+  .cta {
+    flex-direction: column;
+  }
+
+  .cta-info {
+    text-align: center;
+    width: 90%;
+    margin: 0 0 60px;
+  }
+
+  .cta-text-header {
+    font-size: 3.1rem;
+    line-height: 70px;
+  }
+
+  .cta-img-ctr {
+    width: 550px;
+  }
+
+  /************ Features ************/
+
+  .features {
+    flex-direction: column-reverse;
+  }
+
+  .features-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  .feature-list {
+    align-self: center;
+  }
+
+  .feature-list-item {
+    font-size: 1rem;
+  }
+
+  /************ Plans ************/
+
+  .plan {
+    margin: 0;
+  }
+
+  #free-plan {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #standard-plan {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+
+  #premium-plan {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  /************ Subscribe ************/
+
+  .subscribe-content {
+    flex-direction: column;
+  }
+
+  .subscribe-text {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  /************ Footer ************/
+
+  footer {
+    padding-top: 240px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer-links {
+    margin-bottom: 50px;
+  }
+
+  .company-info {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 30px;
+  }
+
+  .footer-logo-ctr {
+    align-self: end;
+    margin-bottom: 20px;
+  }
+
+  .social-media-links {
+    grid-row: 2;
+    grid-column: 1;
+    align-self: center;
+    margin-top: 0;
   }
 }

@@ -9,13 +9,18 @@
   </head>
   <body>
     <main>
+      <div class="body-overlay"></div>
       <div class="sec sec-1">
         <div class="wrapper">
           <header>
+            <button class="nav-toggler-ctr">
+              <img class="nav-toggler" src="assets/bars-solid.svg" />
+            </button>
             <div class="logo-ctr">
               <img src="assets/logo.svg" alt="LaslesVPN" />
             </div>
             <nav>
+              <p class="menu-title">Menu</p>
               <ul class="nav-item-list">
                 <li class="nav-item">
                   <a href="#" class="nav-link">About</a>
@@ -34,11 +39,15 @@
                 </li>
               </ul>
             </nav>
-            <div>
+            <div class="header-sign-btns">
               <button class="btn sign-in-btn">Sign In</button>
               <button class="btn sign-up-btn">Sign Up</button>
             </div>
           </header>
+        </div>
+      </div>
+      <div class="sec sec-2">
+        <div class="wrapper">
           <section class="cta">
             <div class="cta-info">
               <div class="cta-text">
@@ -121,7 +130,7 @@
           </section>
         </div>
       </div>
-      <div class="sec sec-2">
+      <div class="sec sec-3">
         <div class="wrapper">
           <section class="plans">
             <div class="plans-text section-text">
@@ -132,7 +141,7 @@
               </p>
             </div>
             <div class="plans-list">
-              <div class="plan">
+              <div id="free-plan" class="plan">
                 <div class="plan-img-ctr">
                   <img src="assets/plan-free.svg" />
                 </div>
@@ -160,7 +169,7 @@
                   <button class="plan-select-btn">Select</button>
                 </div>
               </div>
-              <div class="plan">
+              <div id="standard-plan" class="plan">
                 <div class="plan-img-ctr">
                   <img src="assets/plan-standard.svg" />
                 </div>
@@ -192,7 +201,7 @@
                   <button class="plan-select-btn">Select</button>
                 </div>
               </div>
-              <div class="plan">
+              <div id="premium-plan" class="plan">
                 <div class="plan-img-ctr">
                   <img src="assets/plan-premium.svg" />
                 </div>
@@ -382,7 +391,7 @@
           </section>
         </div>
       </div>
-      <div class="sec sec-3">
+      <div class="sec sec-4">
         <div class="wrapper">
           <footer>
             <div class="company-info">
