@@ -65,26 +65,8 @@
   }
 }
 
-/*########### Tablet (768px) ###########*/
-
-@media (max-width: 768px) {
-  /************ Global Styles ************/
-
-  .body-overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    display: none;
-  }
-
-  .sec-4 {
-    margin-top: -165px;
-  }
-
+@media (max-width: 1020px) {
+  
   /************ Header & Navigation ************/
 
   nav {
@@ -98,7 +80,6 @@
   }
 
   .menu-title {
-    display: block;
     text-align: center;
     font-size: 1.1rem;
     color: var(--text-color-dark);
@@ -106,6 +87,10 @@
     background: #eeeff2;
     padding: 15px;
     margin: 0;
+  }
+
+  .nav-title {
+    display: block;
   }
 
   .nav-item-list {
@@ -126,6 +111,27 @@
   .nav-toggler-ctr {
     display: block;
     width: 30px;
+  }
+}
+
+/*########### Tablet (768px) ###########*/
+
+@media (max-width: 768px) {
+  /************ Global Styles ************/
+
+  .body-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+  }
+
+  .sec-4 {
+    margin-top: -165px;
   }
 
   /************ Call-to-Action ************/
@@ -237,8 +243,7 @@
 
 /*########### Mobile Large (425px) ###########*/
 
-@media (max-width: 426px) {
-
+@media (max-width: 600px) {
   /************ Global Styles ************/
 
   .section-text {
@@ -470,7 +475,6 @@
 /*########### Mobile Medium (375px) ###########*/
 
 @media (max-width: 376px) {
-
   /************ Global Styles ************/
 
   .sub-heading {
@@ -526,3 +530,47 @@
   }
 }
 
+/*########### Mobile Small (320px) ###########*/
+
+@media (max-width: 321px) {
+  /************ Global Styles ************/
+
+  .section-text {
+    padding: 0 20px;
+  }
+
+  /************ Stats ************/
+
+  .stats {
+    width: 80%;
+  }
+
+  /************ Features ************/
+
+  .features-text {
+    padding: 0 20px;
+  }
+
+  .feature-list {
+    text-align: left;
+  }
+
+  /************ Plans ************/
+
+  .plan {
+    width: auto;
+    padding: 50px 25px 50px;
+  }
+
+  /************ Testimonials ************/
+
+  .testimonial-item {
+    min-width: 180px;
+  }
+
+  /************ Subscribe ************/
+
+  .subscribe-btn {
+    padding: 18px 40px;
+  }
+}
