@@ -429,6 +429,10 @@
 
   /************ Footer ************/
 
+  footer {
+    padding-top: 280px;
+  }
+
   .footer-links {
     width: auto;
     flex-wrap: wrap;
@@ -462,3 +466,63 @@
     margin-top: 15px;
   }
 }
+
+/*########### Mobile Medium (375px) ###########*/
+
+@media (max-width: 376px) {
+
+  /************ Global Styles ************/
+
+  .sub-heading {
+    font-size: 1.9rem;
+  }
+
+  /************ Plans ************/
+
+  .plan {
+    width: auto;
+    padding: 50px 40px 50px;
+  }
+
+  /************ Locations ************/
+
+  .location-points-ctr {
+    padding: 0;
+  }
+
+  /************ Brands ************/
+
+  .brands {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brand-img-ctr {
+    width: 100px;
+    margin: 0 5px;
+  }
+
+  /************ Testimonials ************/
+
+  .testimonial-item {
+    min-width: 210px;
+  }
+
+  /************ Footer ************/
+
+  .footer-links {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .link-col {
+    margin-bottom: 20px;
+  }
+
+  .company-desc-text {
+    width: 240px;
+    padding: 0 20px;
+  }
+}
+
