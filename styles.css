@@ -109,6 +109,10 @@ header {
   font-size: 1rem;
 }
 
+.login-toggler-ctr {
+  display: none;
+}
+
 .sign-in-btn {
   font-weight: 500;
 }

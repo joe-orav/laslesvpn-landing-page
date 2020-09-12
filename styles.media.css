@@ -1,4 +1,4 @@
-/************ Laptop (1024px) ************/
+/*########### Laptop (1024px) ###########*/
 
 @media (max-width: 1024px) {
   /************ Header & Navigation ************/
@@ -65,7 +65,7 @@
   }
 }
 
-/************ Tablet (768px) ************/
+/*########### Tablet (768px) ###########*/
 
 @media (max-width: 768px) {
   /************ Global Styles ************/
@@ -232,5 +232,233 @@
     grid-column: 1;
     align-self: center;
     margin-top: 0;
+  }
+}
+
+/*########### Mobile Large (425px) ###########*/
+
+@media (max-width: 426px) {
+
+  /************ Global Styles ************/
+
+  .section-text {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+
+  .sec-4 {
+    margin-top: -200px;
+  }
+
+  /************ Header & Navigation ************/
+
+  header {
+    justify-content: space-between;
+  }
+
+  .header-sign-btns {
+    position: fixed;
+    height: 100vh;
+    background: #fff;
+    top: 101px;
+    width: 250px;
+    right: 0;
+    display: none;
+  }
+
+  .header-sign-btns .btn {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .logo-ctr {
+    margin: 0;
+  }
+
+  .login-toggler-ctr {
+    display: block;
+    width: 40px;
+  }
+
+  /************ Call-to-Action ************/
+
+  .cta {
+    padding-top: 110px;
+  }
+
+  .cta-img-ctr {
+    width: 90%;
+    min-width: 0;
+  }
+
+  .cta-text-header {
+    font-size: 2.3rem;
+    line-height: 50px;
+  }
+
+  /************ Stats ************/
+
+  .stats {
+    flex-direction: column;
+    width: 70%;
+    margin: 100px auto 90px;
+    padding: 10px 0;
+  }
+
+  .stats-item {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .stats-item:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #eeeff2;
+    border-bottom: 2px solid #eeeff2;
+  }
+
+  .stats-img-ctr {
+    padding-left: 40px;
+  }
+
+  /************ Features ************/
+
+  .features-text {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+
+  .features-img-ctr {
+    min-width: 0;
+    width: 85%;
+  }
+
+  /************ Plans ************/
+
+  .plans-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    margin-bottom: 50px;
+  }
+
+  #free-plan {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  #standard-plan {
+    border-left: 2px solid #dddddd;
+    border-right: 2px solid #dddddd;
+    border-radius: 10px;
+  }
+
+  #premium-plan {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  /************ Locations ************/
+
+  .locations {
+    margin-top: 80px;
+  }
+
+  .location-points-ctr {
+    margin-top: 40px;
+  }
+
+  /************ Testimonials ************/
+
+  .testimonial-items {
+    padding: 0 30px;
+  }
+
+  .testimonial-item {
+    min-width: 260px;
+  }
+
+  .person-info-rating {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .person-rating {
+    margin: 15px 0 15px;
+  }
+
+  .person-rating p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .person-testimonial {
+    margin-top: 0;
+  }
+
+  .rating-icon-ctr {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+
+  .slider-controls {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .page-link:last-child {
+    margin-right: 0;
+  }
+
+  .slider-btns {
+    margin-top: 20px;
+  }
+
+  /************ Subscribe ************/
+
+  .subscribe-content {
+    padding: 50px 40px;
+  }
+
+  .subscribe-text {
+    padding-bottom: 30px;
+  }
+
+  /************ Footer ************/
+
+  .footer-links {
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .link-col {
+    margin: 0 15px;
+  }
+
+  .company-info {
+    grid-auto-flow: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-logo-ctr {
+    margin: 0 auto 20px;
+  }
+
+  .social-media-links {
+    justify-self: center;
+  }
+
+  .social-media-icon-ctr:last-child {
+    margin-right: 0;
+  }
+
+  .copyright {
+    margin-top: 15px;
   }
 }
