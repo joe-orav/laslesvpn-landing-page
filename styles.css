@@ -77,13 +77,46 @@ button {
   text-align: center;
 }
 
+.btn-light {
+  border-radius: 50px;
+  color: var(--primary-color);
+  background: #fff;
+  border: 1px solid var(--primary-color);
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.btn-light:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-dark {
+  position: relative;
+  color: #fff;
+  border-radius: 10px;
+  background: var(--primary-color);
+  font-weight: bold;
+  transition-property: top, border, color, box-shadow, background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  top: 0;
+}
+
+.btn-dark:hover {
+  top: -10px;
+  background: #fff;
+  color: var(--primary-color);
+}
+
 /************ Header & Navigation ************/
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .nav-toggler-ctr {
@@ -118,9 +151,6 @@ header {
 }
 
 .sign-up-btn {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 50px;
   padding: 10px 40px;
   font-weight: 500;
 }
@@ -164,16 +194,16 @@ header {
 }
 
 .cta-btn {
-  color: #fff;
-  font-weight: bold;
-  background: var(--primary-color);
   padding: 17.5px 77.5px;
-  border-radius: 10px;
   margin-top: 2.5rem;
   font-style: normal;
   line-height: 25px;
   font-size: 1rem;
   box-shadow: 0px 30px 54px -5px rgba(245, 56, 56, 0.35);
+}
+
+.cta-btn:hover {
+  box-shadow: 0px 40px 54px 0px rgba(245, 56, 56, 0.35);
 }
 
 /************ Stats ************/
@@ -347,13 +377,15 @@ header {
 
 .plan-select-btn {
   border: 2px solid var(--primary-color);
-  border-radius: 50px;
-  color: var(--primary-color);
   font-size: 1rem;
   font-weight: bold;
   padding: 13px 60px;
   display: block;
   margin: 20px auto 0;
+}
+
+#premium-plan {
+  border: 2px solid var(--primary-color);
 }
 
 /************ Locations ************/
@@ -526,12 +558,12 @@ header {
 }
 
 .subscribe-btn {
-  background: var(--primary-color);
-  color: #fff;
-  font-weight: bold;
   padding: 18px 65px;
-  border-radius: 10px;
   box-shadow: 0px 40px 54px -10px rgba(245, 56, 56, 0.35);
+}
+
+.subscribe-btn:hover {
+  box-shadow: 0px 45px 54px -5px rgba(245, 56, 56, 0.35);
 }
 
 /************ Footer ************/
@@ -572,6 +604,7 @@ footer {
 .social-media-icon {
   display: block;
   position: relative;
+  cursor: pointer;
 }
 
 .social-media-icon-ctr::before {
