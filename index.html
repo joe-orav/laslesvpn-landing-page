@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./styles.media.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.media.css" />
     <title>Lasles VPN</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
       <div class="sec sec-1">
         <div class="wrapper">
           <header>
-            <button class="nav-toggler-ctr">
+            <button id="nav-toggler-btn" class="nav-toggler-ctr">
               <img class="nav-toggler" src="media/bars-solid.svg" />
             </button>
             <div class="logo-ctr">
@@ -39,11 +39,11 @@
                 </li>
               </ul>
             </nav>
-            <button class="login-toggler-ctr">
+            <button id="login-toggler-btn" class="login-toggler-ctr">
               <img class="login-toggler" src="media/sign-in.svg" />
             </button>
             <div class="header-sign-btns">
-              <p class="menu-title login-title">Login</p>
+              <p class="menu-title login-title">Sign In or Join</p>
               <button class="btn sign-in-btn">Sign In</button>
               <button class="btn btn-light sign-up-btn">Sign Up</button>
             </div>
@@ -446,6 +446,7 @@
           </footer>
         </div>
       </div>
+      <script src="js/menu.js"></script>
     </main>
   </body>
 </html>

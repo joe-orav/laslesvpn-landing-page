@@ -110,6 +110,21 @@ button {
   color: var(--primary-color);
 }
 
+.body-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: none;
+}
+
+.body-overlay.show {
+  display: block;
+}
+
 /************ Header & Navigation ************/
 
 header {
@@ -125,6 +140,66 @@ header {
 
 .menu-title {
   display: none;
+}
+
+nav.show {
+  animation: 250ms ease-out navslidein;
+  display: block;
+}
+
+@keyframes navslidein {
+  from {
+    left: -250px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+nav.hide {
+  animation: 250ms ease-out navslideout forwards;
+  display: block;
+}
+
+@keyframes navslideout {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -250px;
+  }
+}
+
+.header-sign-btns.show {
+  animation: 250ms ease-out login-slidein;
+  display: block;
+}
+
+@keyframes login-slidein {
+  from {
+    right: -250px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+.header-sign-btns.hide {
+  animation: 250ms ease-out login-slideout forwards;
+  display: block;
+}
+
+@keyframes login-slideout {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: -250px;
+  }
 }
 
 .nav-item-list {

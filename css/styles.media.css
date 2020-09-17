@@ -66,7 +66,6 @@
 }
 
 @media (max-width: 1020px) {
-  
   /************ Header & Navigation ************/
 
   nav {
@@ -118,18 +117,6 @@
 
 @media (max-width: 768px) {
   /************ Global Styles ************/
-
-  .body-overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    display: none;
-  }
-
   .sec-4 {
     margin-top: -165px;
   }
@@ -274,6 +261,10 @@
   .header-sign-btns .btn {
     display: block;
     margin: 20px auto;
+  }
+
+  .login-title {
+    display: block;
   }
 
   .logo-ctr {
