@@ -1,4 +1,4 @@
-/*########### Laptop (1024px) ###########*/
+/*########### Laptop ###########*/
 
 @media (max-width: 1024px) {
   /************ Header & Navigation ************/
@@ -113,7 +113,7 @@
   }
 }
 
-/*########### Tablet (768px) ###########*/
+/*########### Tablet ###########*/
 
 @media (max-width: 768px) {
   /************ Global Styles ************/
@@ -228,7 +228,7 @@
   }
 }
 
-/*########### Mobile Large (425px) ###########*/
+/*########### Mobile Large ###########*/
 
 @media (max-width: 600px) {
   /************ Global Styles ************/
@@ -405,7 +405,7 @@
     margin-top: 20px;
   }
 
-  .page-link:last-child {
+  .item-link:last-child {
     margin-right: 0;
   }
 
@@ -463,7 +463,7 @@
   }
 }
 
-/*########### Mobile Medium (375px) ###########*/
+/*########### Mobile Medium ###########*/
 
 @media (max-width: 376px) {
   /************ Global Styles ************/
@@ -521,7 +521,7 @@
   }
 }
 
-/*########### Mobile Small (320px) ###########*/
+/*########### Mobile Small ###########*/
 
 @media (max-width: 321px) {
   /************ Global Styles ************/

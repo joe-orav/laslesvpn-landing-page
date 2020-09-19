@@ -495,7 +495,7 @@ nav.hide {
 
 .testimonial-items {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
   margin-top: 60px;
   padding-bottom: 20px;
 }
@@ -506,6 +506,10 @@ nav.hide {
   border-radius: 10px;
   border: 2px solid #dddddd;
   padding: 30px;
+}
+
+.testimonial-item.selected {
+  border: 2px solid var(--primary-color);
 }
 
 .person-icon-ctr {
@@ -571,13 +575,18 @@ nav.hide {
   justify-content: space-between;
 }
 
-.page-link {
+.item-link {
   width: 15px;
   height: 15px;
   background: #dde0e4;
   border-radius: 50px;
   display: inline-block;
   margin-right: 15px;
+  cursor: pointer;
+}
+
+.item-link.selected {
+  background: var(--primary-color);
 }
 
 .slider-btn {
@@ -586,6 +595,7 @@ nav.hide {
   border-radius: 50px;
   padding: 0;
   padding: 15px;
+  outline: none;
 }
 
 .slider-btn img {
