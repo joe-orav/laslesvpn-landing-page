@@ -109,7 +109,8 @@
 
   .nav-toggler-ctr {
     display: block;
-    width: 30px;
+    width: 20px;
+    box-sizing: content-box;
   }
 }
 
@@ -302,7 +303,8 @@
 
   .login-toggler-ctr {
     display: block;
-    width: 40px;
+    width: 25px;
+    box-sizing: content-box;
   }
 
   /************ Call-to-Action ************/
