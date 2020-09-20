@@ -1,4 +1,4 @@
-# Lasles VPN Landing Page (Live Demo)
+# LaslesVPN Landing Page (Live Demo)
 
 A live demo of a mock landing page.
 
